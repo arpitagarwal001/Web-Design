@@ -1,0 +1,339 @@
+@import url("https://fonts.google.com/specimen/Cormorant+SC?preview.text=Education%20Is%20The%20Key%20To%20Success&preview.size=56&preview.text_type=custom#standard-styles");
+
+*{
+    color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+
+/* Global */
+
+.margin-top-128{
+    margin-top: 128px;
+}
+.margin-top-16{
+    margin-top: 16px;
+}
+.margin-top-64{
+    margin-top: 64px;
+}
+.margin-topbottom-128-64{
+    margin-top: 128px;
+    margin-bottom: 64px;
+}
+.margin-64{
+    margin: 64px;
+}
+.margin-16{
+    margin: 16px;
+}
+.padding-8{
+    padding: 8px;
+}
+
+.margin-128{
+    margin: 128px;
+}
+.margin-bottom-32{
+    margin-bottom: 32px;
+}
+
+.line-height-none{
+    line-height: 0;
+}
+
+.padding-left-128{
+    padding-left: 128px;
+}
+
+.padding-topbottom-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.margin-topbottom-32{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.align-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-black{
+    color:black;
+}
+
+
+.all{
+    display: flex;
+    flex-direction: column;
+}
+
+.sections{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 70px 0;
+}
+
+/* Navigation */
+#navbar{
+    background: rgba(50, 9, 64, 0.8 );
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    height: 4rem;
+    transition: all 0.2s ease;
+    z-index: 2;
+}
+
+#navbar:hover{
+    background:rgba(19, 19, 19, 0.6);
+}
+
+/* logo */
+
+#navbar #logo{
+    padding: 0.5rem;
+}
+#navbar #logo img{
+    width: 3rem;
+    padding-top: 2px;
+}
+
+#searchbox .search-bar{
+    /* margin-top: 1.5rem; */
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 30rem;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#searchbox .search-bar::placeholder{
+    color: rgba(255, 255, 255, 0.85);
+}
+
+#searchbox .fa-search{
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+/* List Items*/
+
+#navbar #nav-list #navigation-list{
+    display: flex;
+    margin-right: 3rem;
+}
+
+#navbar #nav-list #navigation-list .items{
+    list-style-type: none;
+    /* margin: 1rem 0.5rem; */
+    font-size: large;
+    padding: .5rem 1rem ;
+    /* border-radius: 12px; */
+    transition: all 0.2s ease-in-out;
+
+}
+
+#navbar #nav-list #navigation-list .items a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+#navbar #nav-list #navigation-list .items:hover{
+    background:  rgba(0, 0, 0, 0.5);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
+}
+#navbar #nav-list #navigation-list .items:active{
+    color: #d02874;
+}
+
+
+/* Hero section */
+.hero-section{
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+}
+/* background low opacity with highlighted text */
+.hero-section::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: -40px;
+    left: 0px;
+    background: url(img/hero.jpg);
+    background-size: cover;
+    opacity: .2;
+
+}
+
+.heroHeading{
+    position: relative;
+    background: linear-gradient(to bottom right, #e47b2a, #d02874, #9d2fc9,#424cb5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 40px;
+    /* left: 650px; */
+    font-size: 10rem;
+    font-family: 'Cormorant','serif';
+    z-index: -1;
+}
+
+#btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pri-btn{
+    background-color: transparent;
+    border: none;
+    padding: 35px;
+    
+}
+.obj-container{
+    display: flex;
+    flex-direction: row;
+    /* margin: 3rem; */
+    margin: 6rem;
+    height: auto;
+    background-color: grey;
+    border-radius: 40px;
+}
+
+.obj-text{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    height: 604;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+.bg-img{
+    opacity: .1;
+}
+
+.obj-item{
+    margin: 6rem 4rem;
+    justify-content: space-between;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cards{
+    background: rgb(50 45 22);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+
+}
+
+.image{
+    width: 250px;
+    padding-bottom: 20px;
+}
+
+.srvc-img{
+    width: 250px;
+    border-radius: 20px;
+}
+
+.srvc-txt{
+    padding: 10px;
+    color: white;
+    font-size: 1.4rem;
+    width: auto;
+    text-align: center;
+}
+
+.h1{
+    width: auto;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    
+}
+
+.objectives::before{
+    /* background-image: url(img.jpg); */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    /* position: relative; */
+    background: url(objectives.jpeg);
+    padding: 100px;
+    background-size: 100%;
+    
+}
+.bg-img{
+    opacity: .2;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    z-index: -2;
+
+}
+
+#obj-id{
+    margin-top: 20px;
+}
+
+#obj-id{
+    font-size: 3rem;
+}
+
+.contact{
+    margin: 20px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+#contact-heading{
+    padding-bottom: 0px;
+    margin-top: 0px;
+    font-size: 3rem;
+}
+.heading2{
+    margin: 8px;
+    margin-bottom: 80px;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.heading3{
+    margin: 8px;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
